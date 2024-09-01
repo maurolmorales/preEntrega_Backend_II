@@ -1,0 +1,600 @@
+[{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c41"
+  },
+  "title": "Laptop HP",
+  "description": "Laptop HP de alta gama con procesador Intel i7.",
+  "code": "HP1234",
+  "price": 1200,
+  "status": true,
+  "stock": 15,
+  "category": "Electrónica"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c42"
+  },
+  "title": "Smartphone Samsung",
+  "description": "Smartphone Samsung Galaxy S21 con 128GB de almacenamiento.",
+  "code": "SSG21",
+  "price": 800,
+  "status": true,
+  "stock": 30,
+  "category": "Electrónica"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c43"
+  },
+  "title": "Auriculares Sony",
+  "description": "Auriculares inalámbricos Sony con cancelación de ruido.",
+  "code": "SONYWH1000XM4",
+  "price": 300,
+  "status": true,
+  "stock": 25,
+  "category": "Accesorios"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c44"
+  },
+  "title": "Televisor LG",
+  "description": "Televisor LG 4K de 55 pulgadas con HDR.",
+  "code": "LGTV55",
+  "price": 700,
+  "status": true,
+  "stock": 25,
+  "category": "Electrodomésticos"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c45"
+  },
+  "title": "Cámara Canon",
+  "description": "Cámara réflex Canon EOS 90D con lente 18-135mm.",
+  "code": "CANON90D",
+  "price": 1500,
+  "status": true,
+  "stock": 10,
+  "category": "Fotografía"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c46"
+  },
+  "title": "Lámpara de Escritorio LED",
+  "description": "Lámpara de escritorio ajustable con luz LED de bajo consumo.",
+  "code": "LAMP001",
+  "price": 29.99,
+  "status": true,
+  "stock": 15,
+  "category": "Iluminación"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c47"
+  },
+  "title": "Silla de Oficina Ergonómica",
+  "description": "Silla ergonómica con soporte lumbar y reposabrazos ajustables.",
+  "code": "SILLA001",
+  "price": 89.99,
+  "status": true,
+  "stock": 8,
+  "category": "Mobiliario"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c48"
+  },
+  "title": "Teclado Mecánico RGB",
+  "description": "Teclado mecánico con retroiluminación RGB y switches táctiles.",
+  "code": "TECL001",
+  "price": 59.99,
+  "status": true,
+  "stock": 20,
+  "category": "Accesorios de Computación"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c49"
+  },
+  "title": "Monitor 4K UHD 27 pulgadas",
+  "description": "Monitor de alta resolución 4K con pantalla de 27 pulgadas.",
+  "code": "MON001",
+  "price": 299.99,
+  "status": true,
+  "stock": 5,
+  "category": "Monitores"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c4a"
+  },
+  "title": "Auriculares Inalámbricos Bluetooth",
+  "description": "Auriculares con cancelación de ruido y conexión Bluetooth.",
+  "code": "AURI001",
+  "price": 69.99,
+  "status": true,
+  "stock": 12,
+  "category": "Audio"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c4b"
+  },
+  "title": "Mesa de Centro de Madera",
+  "description": "Mesa de centro de madera de roble con acabado rústico.",
+  "code": "MESA001",
+  "price": 120,
+  "status": true,
+  "stock": 7,
+  "category": "Mobiliario"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c4c"
+  },
+  "title": "Cafetera Espresso Automática",
+  "description": "Cafetera automática con molinillo integrado y sistema de vaporización.",
+  "code": "CAF001",
+  "price": 199.99,
+  "status": true,
+  "stock": 10,
+  "category": "Electrodomésticos"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c4d"
+  },
+  "title": "Smartphone 128GB",
+  "description": "Teléfono inteligente con pantalla de 6.5 pulgadas y 128GB de almacenamiento.",
+  "code": "SMART001",
+  "price": 499.99,
+  "status": true,
+  "stock": 25,
+  "category": "Electrónica"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c4e"
+  },
+  "title": "Reloj Inteligente Deportivo",
+  "description": "Reloj inteligente con monitor de actividad física y GPS integrado.",
+  "code": "RELOJ001",
+  "price": 89.99,
+  "status": true,
+  "stock": 18,
+  "category": "Accesorios"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c4f"
+  },
+  "title": "Altavoz Portátil Bluetooth",
+  "description": "Altavoz portátil con conectividad Bluetooth y resistencia al agua.",
+  "code": "ALTAV001",
+  "price": 45,
+  "status": true,
+  "stock": 30,
+  "category": "Audio"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c50"
+  },
+  "title": "Auriculares Inalámbricos",
+  "description": "Auriculares con cancelación de ruido y duración de batería de hasta 24 horas.",
+  "code": "AURI001",
+  "price": 150,
+  "status": true,
+  "stock": 20,
+  "category": "Audio"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c51"
+  },
+  "title": "Silla de Oficina Ergonómica",
+  "description": "Silla con soporte lumbar ajustable y asiento de malla transpirable.",
+  "code": "SILLA001",
+  "price": 220,
+  "status": true,
+  "stock": 15,
+  "category": "Mobiliario"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c52"
+  },
+  "title": "Lámpara de Escritorio LED",
+  "description": "Lámpara LED con brazo ajustable y control táctil para ajustar la intensidad de la luz.",
+  "code": "LAMP001",
+  "price": 35.99,
+  "status": true,
+  "stock": 50,
+  "category": "Iluminación"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c53"
+  },
+  "title": "Monitor 27 pulgadas 4K",
+  "description": "Monitor UHD 4K con tecnología IPS y amplio ángulo de visión.",
+  "code": "MONIT001",
+  "price": 399.99,
+  "status": true,
+  "stock": 12,
+  "category": "Electrónica"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c54"
+  },
+  "title": "Teclado Mecánico RGB",
+  "description": "Teclado mecánico con retroiluminación RGB y switches de alta durabilidad.",
+  "code": "TECL001",
+  "price": 89.99,
+  "status": true,
+  "stock": 35,
+  "category": "Periféricos"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c55"
+  },
+  "title": "Monitor Curvo 4K",
+  "description": "Monitor gaming curvo con resolución 4K y alta tasa de refresco.",
+  "code": "MONI001",
+  "price": 399.99,
+  "status": true,
+  "stock": 10,
+  "category": "Periféricos"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c56"
+  },
+  "title": "Auriculares Gamer con Micrófono",
+  "description": "Auriculares con sonido envolvente y micrófono con cancelación de ruido.",
+  "code": "AURI001",
+  "price": 79.99,
+  "status": true,
+  "stock": 25,
+  "category": "Periféricos"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c57"
+  },
+  "title": "Mouse Gaming Inalámbrico",
+  "description": "Mouse gaming con sensor óptico de alta precisión y conexión inalámbrica.",
+  "code": "MOUS001",
+  "price": 59.99,
+  "status": true,
+  "stock": 15,
+  "category": "Periféricos"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c58"
+  },
+  "title": "Smartphone 5G",
+  "description": "Smartphone de última generación con conectividad 5G y cámara de alta resolución.",
+  "code": "SMAR001",
+  "price": 999.99,
+  "status": true,
+  "stock": 5,
+  "category": "Telefonía"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c59"
+  },
+  "title": "Tablet Android",
+  "description": "Tablet Android con pantalla táctil y procesador de alto rendimiento.",
+  "code": "TABL001",
+  "price": 349.99,
+  "status": true,
+  "stock": 20,
+  "category": "Computación"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c5a"
+  },
+  "title": "Consola de Videojuegos",
+  "description": "Consola de videojuegos de última generación con juegos exclusivos.",
+  "code": "CONS001",
+  "price": 499.99,
+  "status": true,
+  "stock": 8,
+  "category": "Entretenimiento"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c5b"
+  },
+  "title": "Smartwatch",
+  "description": "Smartwatch con monitor de frecuencia cardíaca y notificaciones inteligentes.",
+  "code": "SWAT001",
+  "price": 199.99,
+  "status": true,
+  "stock": 12,
+  "category": "Wearables"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c5c"
+  },
+  "title": "Auriculares Inalámbricos Bluetooth",
+  "description": "Auriculares Bluetooth con estuche de carga y cancelación de ruido activa.",
+  "code": "AURI002",
+  "price": 129.99,
+  "status": true,
+  "stock": 18,
+  "category": "Audio"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c5d"
+  },
+  "title": "Altavoz Inteligente",
+  "description": "Altavoz inteligente con asistente de voz y control por voz.",
+  "code": "ALTA001",
+  "price": 99.99,
+  "status": true,
+  "stock": 15,
+  "category": "Hogar Inteligente"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c5e"
+  },
+  "title": "Cámara de Seguridad",
+  "description": "Cámara de seguridad con visión nocturna y detección de movimiento.",
+  "code": "CAMA001",
+  "price": 69.99,
+  "status": true,
+  "stock": 22,
+  "category": "Seguridad"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c5f"
+  },
+  "title": "Cafetera Inteligente",
+  "description": "Cafetera que prepara café de forma personalizada y se controla desde una app.",
+  "code": "CAFE001",
+  "price": 149.99,
+  "status": true,
+  "stock": 18,
+  "category": "Hogar"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c60"
+  },
+  "title": "Aspiradora Robótica",
+  "description": "Aspiradora autónoma que limpia suelos de forma eficiente.",
+  "code": "ASPI001",
+  "price": 299.99,
+  "status": true,
+  "stock": 12,
+  "category": "Hogar"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c61"
+  },
+  "title": "Smart TV 8K",
+  "description": "Televisor con resolución 8K y funciones inteligentes.",
+  "code": "SMTV001",
+  "price": 2499.99,
+  "status": true,
+  "stock": 5,
+  "category": "Entretenimiento"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c62"
+  },
+  "title": "Bicicleta Estática Inteligente",
+  "description": "Bicicleta estática con seguimiento de datos y programas de entrenamiento personalizados.",
+  "code": "BICI001",
+  "price": 499.99,
+  "status": true,
+  "stock": 10,
+  "category": "Deportes"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c63"
+  },
+  "title": "Consola de Juegos Portátil",
+  "description": "Consola portátil con una amplia biblioteca de juegos.",
+  "code": "CONP001",
+  "price": 249.99,
+  "status": true,
+  "stock": 15,
+  "category": "Entretenimiento"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c64"
+  },
+  "title": "Drone con Cámara 4K",
+  "description": "Drone con cámara 4K para grabar videos de alta calidad.",
+  "code": "DRON001",
+  "price": 599.99,
+  "status": true,
+  "stock": 8,
+  "category": "Hobbies"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c65"
+  },
+  "title": "Proyector Portátil",
+  "description": "Proyector portátil con alta luminosidad y resolución Full HD.",
+  "code": "PROY001",
+  "price": 199.99,
+  "status": true,
+  "stock": 20,
+  "category": "Entretenimiento"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c66"
+  },
+  "title": "Reloj Inteligente para Niños",
+  "description": "Reloj inteligente con GPS para ubicar a los niños y funciones de comunicación.",
+  "code": "RELO001",
+  "price": 99.99,
+  "status": true,
+  "stock": 12,
+  "category": "Wearables"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c67"
+  },
+  "title": "Báscula Inteligente",
+  "description": "Báscula que mide peso, IMC y otros datos corporales.",
+  "code": "BASC001",
+  "price": 59.99,
+  "status": true,
+  "stock": 18,
+  "category": "Salud"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c68"
+  },
+  "title": "Auriculares con Cancelación de Ruido Activa",
+  "description": "Auriculares de alta calidad con cancelación de ruido activa para una experiencia auditiva inmersiva.",
+  "code": "AURI003",
+  "price": 299.99,
+  "status": true,
+  "stock": 15,
+  "category": "Audio"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c69"
+  },
+  "title": "Guitarra Eléctrica",
+  "description": "Guitarra eléctrica con cuerpo de madera de caoba y mástil de arce.",
+  "code": "GUIT001",
+  "price": 799.99,
+  "status": true,
+  "stock": 12,
+  "category": "Instrumentos Musicales"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c6a"
+  },
+  "title": "Patinete Eléctrico",
+  "description": "Patinete eléctrico plegable y ligero, ideal para desplazamientos urbanos.",
+  "code": "PATI001",
+  "price": 399.99,
+  "status": true,
+  "stock": 18,
+  "category": "Transporte"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c6b"
+  },
+  "title": "Lentes de Realidad Virtual",
+  "description": "Lentes de realidad virtual para disfrutar de juegos y experiencias inmersivas.",
+  "code": "LENT001",
+  "price": 499.99,
+  "status": true,
+  "stock": 10,
+  "category": "Electrónica"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c6c"
+  },
+  "title": "Consola de Juegos Retro",
+  "description": "Consola retro con los juegos clásicos de tu infancia.",
+  "code": "CONR001",
+  "price": 199.99,
+  "status": true,
+  "stock": 15,
+  "category": "Entretenimiento"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c6d"
+  },
+  "title": "Impresora 3D",
+  "description": "Impresora 3D para crear tus propios diseños en 3D.",
+  "code": "IMPR001",
+  "price": 999.99,
+  "status": true,
+  "stock": 8,
+  "category": "Tecnología"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c6e"
+  },
+  "title": "Robot Aspirador y Fregona",
+  "description": "Robot que aspira y friega el suelo de forma autónoma.",
+  "code": "ROBO001",
+  "price": 349.99,
+  "status": true,
+  "stock": 12,
+  "category": "Hogar"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c6f"
+  },
+  "title": "Drone con Cámara Térmica",
+  "description": "Drone con cámara térmica para inspecciones y búsqueda y rescate.",
+  "code": "DRON002",
+  "price": 1299.99,
+  "status": true,
+  "stock": 5,
+  "category": "Profesional"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c70"
+  },
+  "title": "Proyector de Cine en Casa",
+  "description": "Proyector de cine en casa con alta luminosidad y resolución 4K.",
+  "code": "PROY002",
+  "price": 1499.99,
+  "status": true,
+  "stock": 10,
+  "category": "Entretenimiento"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c71"
+  },
+  "title": "Consola de Juegos Retro Mini",
+  "description": "Consola retro mini con cientos de juegos clásicos en un tamaño compacto.",
+  "code": "CONR002",
+  "price": 79.99,
+  "status": true,
+  "stock": 20,
+  "category": "Entretenimiento"
+},
+{
+  "_id": {
+    "$oid": "66cfba87e3b52fc3de1a5c72"
+  },
+  "title": "Kit de Electrónica para Principiantes",
+  "description": "Kit completo para aprender a construir tus propios circuitos electrónicos.",
+  "code": "KITE001",
+  "price": 99.99,
+  "status": true,
+  "stock": 15,
+  "category": "Educación"
+}]

@@ -1,0 +1,410 @@
+:root {
+  --negro: #393939;
+  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-secundaria: Verdana;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+::-moz-selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+::selection {
+  background-color: var(--negro);
+  color: var(--blanco);
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  background-color: darkgray;
+}
+body {
+  min-width: 100vw;
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--tipo-principal);
+  color: var(--negro);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;  
+  line-height: 1.4em;  
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;  
+  font-smooth: always;  
+  -webkit-font-smoothing: antialiased;  
+  -moz-osx-font-smoothing: grayscale;
+}
+
+hr{
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+h2 {
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+
+}
+h3{
+  font-size: 1.3rem;
+  padding-bottom: 0.5rem;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: bold;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  display: inherit;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="number"] {
+  background-color: bisque;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+
+button,
+input[type="submit"] {
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  /* color: #393939; */
+  /* background-color: silver; */
+  /* box-shadow: 1px 1px 1px black; */
+}
+button,
+input[type="submit"]:hover{
+  cursor: pointer;
+  color: crimson;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+p svg {
+  display: inline;
+  width: initial;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+p a {
+  display: inline;
+}
+nav {
+  width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+  background-color: teal;
+}
+
+nav a {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 5px rgb(62, 62, 62);
+  background-color: rgb(121, 196, 199);
+}
+
+nav a:hover {
+  color: blue;
+  box-shadow: 1px 1px 5px blue;
+}
+
+ul{
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+li {
+  list-style: none;
+  position: relative;
+  padding: 3px 0 2px 25px;
+
+  /* width: 100%; 
+  text-indent: 1rem;
+  list-style-position: inside;
+  list-style-type: disc; */
+}
+
+ul li::before {
+  content: '>';
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+tr {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: antiquewhite;
+}
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  gap: 1rem;
+  align-content: flex-start;
+  background-color: teal;
+}
+
+.container div {
+  position: relative;
+  width: 20rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0.8rem;
+  color: aliceblue;
+  box-shadow: 1px 1px 1px black;
+  background-color: rgba(13, 85, 163, 0.747);
+}
+
+.container div button {
+  width: 80%;
+  align-self: center;
+  position: absolute;
+  color: #393939;
+  bottom: 2rem;
+}
+
+.container li{
+  display: flex;
+  margin-bottom: 0.5rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.twoColumns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* display: grid;
+  grid-template-columns: 20rem auto; */
+}
+
+.form {
+  height: auto;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 1rem;
+  gap: 2rem;
+  background-color: teal;
+}
+
+.form h2 {
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.form div {
+  padding: 0.8rem;
+  background-color: rgb(128, 126, 126);
+}
+
+.buttonEnviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home{
+  padding: 2rem;
+  font-size: larger;
+}
+.home article{
+  padding-bottom: 2rem;
+}
+
+.home article section{
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.pagination {
+  padding-top: 20px;
+}
+
+.pagination a {
+  padding: 10px;
+  text-decoration: none;
+  color: blue;
+}
+
+.cartDiv{
+  width: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart-completed{ color: rgb(116, 11, 11);}
+.cart-open{ color: rgb(16, 215, 16);}
+
+.submitSmall{
+  width: 0.5rem;
+  background-color: transparent;
+  background-image: url('../img/delete.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.submitSmallCart{
+  width: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  background-color: transparent;
+  background-image: url('../img/article.svg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.submitSmallCart:hover{  
+  color: rebeccapurple;
+}
+
+.formButton{
+  width: fit-content;
+  height: fit-content;
+}
+
+.buttonGray{
+  color: #393939;
+  background-color: silver;
+  box-shadow: 1px 1px 1px black;  
+}
+
+.commandButtons{
+  width: 100%;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+}

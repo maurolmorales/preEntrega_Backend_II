@@ -1,0 +1,21 @@
+{{>header}}
+
+<div class="container">
+  {{#each plainCarts}}
+    <div>
+      <ul>
+      {{#each products}}
+        <li>{{product.title}} {{> buttonDelProdCart pid=product._id cid=../_id}}</li>
+      {{/each}}
+      </ul>
+      <p>ID del Carrito: {{this._id}}</p>
+      <p><strong>Date: </strong> {{date}}</p>
+      <p><strong>Status: <span class="cart-{{status}}"> {{status}}</span></strong></p>
+      <span class="commandButtons">
+        {{>buttonGoToCart cid=this._id}}
+        {{>buttonCloseCart cid=this._id}}
+        {{>buttonEmptyCart cid=this._id}}      
+      </span>
+    </div>
+  {{/each}}
+</div>

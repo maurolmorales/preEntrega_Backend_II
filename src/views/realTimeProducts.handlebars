@@ -1,0 +1,41 @@
+{{>header}}
+
+<section class="twoColumns">
+  <div class="form" id="newProductForm">
+    <h2>Crear Producto</h2>
+    <form id="formNewProduct">
+      <div>
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title" placeholder="Laptop HP" />
+      </div>
+      <div>
+        <label for="description">Description: </label>
+        <input type="text" name="description" id="description" placeholder="Laptop de alta gama..." />
+      </div>
+      <div>
+        <label for="code">Code: </label>
+        <input type="text" name="code" id="code" placeholder="HP1234" />
+      </div>
+      <div>
+        <label for="price">Price: </label>
+        <input type="number" step="0.01" name="price" id="price" />
+      </div>
+      <div>
+        <label for="stock">Stock: </label>
+        <input type="number" name="stock" id="stock" />
+      </div>
+      <div>
+        <label for="category">Category: </label>
+        <input type="text" name="category" id="category" placeholder="Electrónica" />
+      </div>
+      <div class="buttonEnviar">
+        <input type="submit" value="Enviar" class="formButton buttonGray" />
+      </div>
+    </form>
+  </div>
+  <div class="container" id="productContainer">
+
+  </div>
+</section>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
