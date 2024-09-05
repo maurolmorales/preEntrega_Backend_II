@@ -16,28 +16,29 @@ const getAllProducts_controller = async (req, res) => {
       sort: sort ? {price: sort == 'asc' ? 1 : -1} : {}, // ordena por precio acendente
       lean: true, // para devolver objetos planos.
     };
-
+  
     const filter = query ? {category: query } : {};
 
     const products = await getAllProducts_manager(filter, options);
-    const productsData = await JSON.parse(JSON.stringify(products));
+    //const productsData = await JSON.parse(JSON.stringify(products));
     
-    return res.status(200).render("products", {
+    const paginationInfo = {
       pageTitle: "Lista de Productos",
       status: 'success',
       productsData: products.docs,// payload
-      currentPage: products.page,
-      totalPages: products.totalPages,
-      hasPrevPage: products.hasPrevPage,
-      hasNextPage: products.hasNextPage,
-      prevPage: products.prevPage,
-      nextPage: products.nextPage,
-      prevLink: products.hasPrevPage ? `/products?limit=${limit}&page=${products.prevPage}&sort=${sort}&query=${query}` : null,
-      nextLink: products.hasNextPage ? `/products?limit=${limit}&page=${products.nextPage}&sort=${sort}&query=${query}` : null,
-    });
-
-  } catch (error) {
-    res.status(500).json(error.message);
+      totalPages:   products.totalPages,
+      currentPage:  products.page,
+      hasPrevPage:  products.hasPrevPage,
+      hasNextPage:  products.hasNextPage,
+      prevPage:     products.prevPage,
+      nextPage:     products.nextPage,
+      prevLink:     products.hasPrevPage ? `/products?limit=${limit}&page=${products.prevPage}&sort=${sort}&query=${query}` : null,
+      nextLink:     products.hasNextPage ? `/products?limit=${limit}&page=${products.nextPage}&sort=${sort}&query=${query}` : null,
+    }
+    res.status(200).json(paginationInfo)
+  } catch (error) { 
+    console.error("Error obteniendo productos:", error);
+    res.status(500).json({ status: 'error', message: error.message });
   }
 };
 
@@ -46,13 +47,12 @@ const getOneProduct_controller = async (req, res) => {
     const productFound = await getOneProduct_manager(req.params.pid);
     if (productFound) {
       const plainProduct = JSON.parse(JSON.stringify(productFound));
-      res.status(200)
-      .render("idProduct",{pageTitle:"producto Seleccionado",plainProduct});
+      res.status(200).json(plainProduct)
     } else {
       res.status(404).json({ error: "Producto no encontrado" });
     }
   } catch (error) {
-    res.status(500).json({ error: "Error al obtener un producto" }, error.message);
+    res.status(500).json(error.message);
   }
 };
 

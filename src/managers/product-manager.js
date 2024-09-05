@@ -3,7 +3,6 @@ const Product = require("../models/product-model.js");
 const getAllProducts_manager = async (filter, options) => {
   try {
     const products = await Product.paginate(filter, options);
-    console.log('products: ', products)
     return products;
   } catch (error) {
     throw new Error("Error al obtener los productos con paginación");

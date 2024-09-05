@@ -5,7 +5,6 @@ const getAllCarts_manager = async () => {
   if (!carts) {
     return [{}];
   }
-  // .explain('executionStats');
   return carts;
 };
 

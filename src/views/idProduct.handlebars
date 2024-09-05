@@ -2,11 +2,11 @@
 
 <div class="container">
   <div>
-    <h2>{{plainProduct.title}}</h2>
-    <p>{{plainProduct.description}}</p>
-    <p>Código: {{plainProduct.code}}</p>
-    <p>Precio: {{plainProduct.price}}</p>
-    <p>Categoría: {{plainProduct.category}}</p>
-    {{>buttonAddCart param=plainProduct._id}}
+    <h2>{{data.title}}</h2>
+    <p>{{data.description}}</p>
+    <p>Código: {{data.code}}</p>
+    <p>Precio: {{data.price}}</p>
+    <p>Categoría: {{data.category}}</p>
+    {{> buttonAddCart param=data._id}}
   </div>
 </div>

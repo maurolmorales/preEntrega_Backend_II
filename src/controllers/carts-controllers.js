@@ -20,7 +20,7 @@ const getAllCarts_controller = async (req, res) => {
         .json({ error: "Lista de Carritos no encontrada" }, error.message);
     }
     const plainCarts = JSON.parse(JSON.stringify(carts));
-    res.status(200).render("carts", {plainCarts, pageTitle: "Lista de Carritos" });
+    res.status(200).json(plainCarts);
   } catch (error) {
     res.status(500).json({ error: "Error al obtener los carritos" });
   }
@@ -29,10 +29,13 @@ const getAllCarts_controller = async (req, res) => {
 const getOneCart_controller = async (req, res) => {
   try {
     const cart = await getOneCart_manager(req.params.cid);
-    if (!cart) { res.status(404).json({ error: "Lista de Carritos no encontrada" }, error.message);
+    if (!cart) {
+      res
+        .status(404)
+        .json({ error: "Lista de Carritos no encontrada" }, error.message);
     }
-      const plainCart = JSON.parse(JSON.stringify(cart));
-      res.status(200).render("idCart", {plainCart, pageTitle: "Carrito Seleccionado" });
+    const plainCart = JSON.parse(JSON.stringify(cart));
+    res.status(200).json(plainCart);
   } catch (error) {
     res.status(500).json({ error: "Error al obtener un carrito" });
   }
@@ -54,14 +57,14 @@ const addProdToCart_controller = async (req, res) => {
   }
 };
 
-const closeCart_controller = async(req, res)=>{
+const closeCart_controller = async (req, res) => {
   try {
-    await closeCart_manager(req.params.cid)
+    await closeCart_manager(req.params.cid);
     res.status(200).redirect("/carts");
   } catch (error) {
-    res.status(500).json({error: "Error al cerrar el carrito"})
+    res.status(500).json({ error: "Error al cerrar el carrito" });
   }
-}
+};
 
 const createCart_controller = async (req, res) => {
   try {
@@ -148,20 +151,23 @@ const deleteOneCart_controller = async (req, res) => {
 
 const emptyCart_controller = async (req, res) => {
   try {
-    const { cid } = req.params; 
+    const { cid } = req.params;
 
     // Llama al manager para eliminar el producto
     const updatedCart = await emptyCart_manager(cid);
 
-    if (!updatedCart) { return res.status(404).json({ error: "Carrito o producto no encontrado" }) }
+    if (!updatedCart) {
+      return res
+        .status(404)
+        .json({ error: "Carrito o producto no encontrado" });
+    }
     // Redirige o responde según sea necesario
     res.status(200).redirect("/carts");
-
   } catch (error) {
     res
       .status(500)
-      .json({ error: "Error al obtener los carritos(controller)"})
-  }  
+      .json({ error: "Error al obtener los carritos(controller)" });
+  }
 };
 
 const updateOneCart_controller = async (req, res) => {
@@ -182,20 +188,23 @@ const updateOneCart_controller = async (req, res) => {
 
 const delProdToCart_controller = async (req, res) => {
   try {
-    const { cid, pid } = req.params; 
+    const { cid, pid } = req.params;
 
     // Llama al manager para eliminar el producto
     const updatedCart = await delProdToCart_manager(cid, pid);
 
-    if (!updatedCart) { return res.status(404).json({ error: "Carrito o producto no encontrado" }) }
+    if (!updatedCart) {
+      return res
+        .status(404)
+        .json({ error: "Carrito o producto no encontrado" });
+    }
     // Redirige o responde según sea necesario
     res.status(200).redirect("/carts");
-
   } catch (error) {
     res
       .status(500)
-      .json({ error: "Error al obtener los carritos(controller)"})
-  }  
+      .json({ error: "Error al obtener los carritos(controller)" });
+  }
 };
 
 module.exports = {
@@ -207,5 +216,5 @@ module.exports = {
   deleteOneCart_controller,
   emptyCart_controller,
   updateOneCart_controller,
-  delProdToCart_controller
+  delProdToCart_controller,
 };

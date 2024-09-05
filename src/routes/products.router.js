@@ -1,5 +1,7 @@
 const express = require("express");
 const router = express.Router();
+const { auth } = require("../middlewares/auth.js");
+
 const {
   getAllProducts_controller,
   getOneProduct_controller,

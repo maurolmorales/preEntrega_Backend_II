@@ -1,7 +1,7 @@
 {{>header}}
 
 <div class="container">
-  {{#each productsData}}
+  {{#each data.productsData}}
     <div>
       <p><strong>Name: </strong> {{this.title}}</p>
       <p><strong>Description: </strong> {{this.description}}</p>
@@ -18,13 +18,14 @@
       </span>
     </div>
   {{/each}}
+  
   <nav class="pagination">
-    {{#if hasPrevPage}}
-      <a href="/products/?page={{prevPage}}">Anterior</a>
+    {{#if data.hasPrevPage}}
+      <a href="/products/?page={{data.prevPage}}">Anterior</a>
     {{/if}}
-    <span>Página {{currentPage}} de {{totalPages}}</span>
-    {{#if hasNextPage}}
-      <a href="/products/?page={{nextPage}}">Siguiente</a>
+    <span>Página {{data.currentPage}} de {{data.totalPages}}</span>
+    {{#if data.hasNextPage}}
+      <a href="/products/?page={{data.nextPage}}">Siguiente</a>
     {{/if}}
   </nav>
 </div>
